@@ -6,7 +6,7 @@
     <title>{% block title %} Home {% endblock %}</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
-<body>
+<body style="background-color: #FBF5EF;">
 {% include 'nav.html' %}
 
 <!--Carousel banners to give a quick slide view -->
@@ -19,23 +19,25 @@
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="/static/switzerland.webp" class="d-block w-100" style="height: 300px;">
+            <img src="/static/1_home.png" class="d-block w-100" style="max-height: 600px;">
         </div>
         <div class="carousel-item">
-            <img src = '/static/south_korea.png' class="d-block w-100" style="height: 300px;">
+            <img src = '/static/2_home.png' class="d-block w-100" style="max-height: 600px;">
         </div>
         <div class="carousel-item">
-            <img src="/static/india.jfif" class="d-block w-100" style="height: 200px;">
+            <img src="/static/3_home.png" class="d-block w-100" style="max-height: 600px;">
         </div>
         <div class="carousel-item">
-            <img src="/static/india.jfif" class="d-block w-100" style="height: 200px;">
+            <img src="/static/4_home.png" class="d-block w-100" style="max-height: 600px;">
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#sliders" data-bs-slide="prev">
         <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#sliders" data-bs-slide="next">
         <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
     </button>
 </div> 
 
@@ -47,7 +49,7 @@
         <div class="card shadow-sm">
             <img class="card-img-top" src="/static/india.jfif" width="200px" height="300px"/>
             <div class="card-body">
-                <div class="card-title"><h3><center> India </center></h3></div>
+                <div class="card-title"><h3 style="color: #3F3B3B;"><center> India </center></h3></div>
             </div>
         </div>
     </div>
@@ -55,7 +57,7 @@
         <div class="card shadow-sm" >
             <img class="card-img-top" src="/static/south_korea.png"width="200px" height="300px"/>
             <div class="card-body">
-                <div class="card-title"><h3><center> South Korea </center></h3></div>
+                <div class="card-title"><h3 style="color: #3F3B3B;"><center> South Korea </center></h3></div>
             </div>
         </div>
     </div>
@@ -63,7 +65,7 @@
         <div class="card shadow-sm" >
             <img class="card-img-top" src="/static/switzerland.webp"width="200px" height="300px"/>
             <div class="card-body">
-                <div class="card-title"><h3><center> Switzerland </center></h3></div>
+                <div class="card-title"><h3 style="color: #3F3B3B;"><center> Switzerland </center></h3></div>
             </div>
         </div>
     </div>
@@ -91,35 +93,37 @@
 
 <!--Signatures-->
 <h1 style="margin-top: 10%;"><center>Exquisite Dishes</center></h1>
-<div class="row">
+<hr class="hr"/>
+<div class="row" style="margin-top: 5%;">
     <div class="col-4">
-        <div class="card">
-            <img src="/static/south_korea.png" class="responsive-fluid" style="height: 500px;">
+        <div class="card"style="background-color: #FBF5EF; border-color: #FBF5EF">
+            <img src="/static/Indochine at Delaire Graff Estate _ Drizzle and Dip.jfif" class="responsive-fluid btn card-img-top" data-bs-toggle="collapse" href="#Hide" style="height: 380px;">
+            <div class="collapse" id="Hide"><center>Food 1</center></div>
         </div>
     </div>
     <div class="col-4">
         <div class="card">
-            <img src="/static/switzerland.webp" class="responsive-fluid"style="height: 500px;">
+            <img src="/static/[Homemade] Pan Roasted Chicken Thigh, Mashed Potatoes, and Sauteed Green Beans.jfif" class="responsive-fluid"style="height: 380px;">
         </div>
     </div>
     <div class="col-4">
         <div class="card">
-            <img src="/static/india.jfif" class="responsive-fluid" style="height: 500px;">
+            <img src="/static/Chocolate Pots de Creme.jfif" class="responsive-fluid" style="height: 380px;">
         </div>
     </div>
     <div class="col-3"  style="margin-top: 10px;">
         <div class="card">
-            <img src="/static/south_korea.png" class="responsive-fluid" style="height: 500px;">
+            <img src="/static/food4.png" class="responsive-fluid" style="height: 380px;">
         </div>
     </div> 
     <div class="col-5"style="margin-top: 10px;">
         <div class="card">
-            <img src="/static/india.jfif" class="responsive-fluid" style="height: 500px; width: 525px">
+            <img src="/static/food5.jfif" class="responsive-fluid" style="height: 380px; width: 525px">
         </div>
     </div>
     <div class="col-4"style="margin-top: 10px;">
         <div class="card">
-            <img src="/static/india.jfif"class="responsive-fluid" style="height: 500px; width: 400px">
+            <img src="/static/cake.jfif"class="responsive-fluid" style="height: 380px; width: 400px">
         </div>
     </div>
 </div>
