@@ -10,7 +10,7 @@
 {% include 'nav.html' %}
 
 <!--Carousel banners to give a quick slide view -->
-<div class="carousel slide" id="sliders" data-bs-ride="true">
+<div class="carousel slide" id="sliders" data-bs-ride="carousel">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#sliders" data-bs-slide-to ='0' class="active"></button>
         <button type="button" data-bs-target="#sliders" data-bs-slide-to="1"></button>
@@ -18,16 +18,16 @@
         <button type="button" data-bs-target="#sliders" data-bs-slide-to="3"></button> 
     </div>
     <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item active" data-bs-interval="3000">
             <img src="/static/1_home.png" class="d-block w-100" style="max-height: 600px;">
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-bs-interval="3000">
             <img src = '/static/2_home.png' class="d-block w-100" style="max-height: 600px;">
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-bs-interval="3000">
             <img src="/static/3_home.png" class="d-block w-100" style="max-height: 600px;">
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item"data-bs-interval="3000">
             <img src="/static/4_home.png" class="d-block w-100" style="max-height: 600px;">
         </div>
     </div>
@@ -75,7 +75,7 @@
 <div class="row" style="padding-top: 10%;">
     <div class="col-7">
         <div class="card">
-            <center><img class="card-img-top" src="/static/switzerland.webp"/></center>
+            <center><img class="card-img-top" src="/static/The Politan Aqua by Everland.jfif"/></center>
             <div class="card-body">
                 <div class="card-title"><h5 style="text-align: right;"><a href="about.html#Neighborhood" style="text-decoration: none; color: black;">Explore our Neighborhood ></a></h5></div>
             </div>
@@ -97,33 +97,38 @@
 <div class="row" style="margin-top: 5%;">
     <div class="col-4">
         <div class="card"style="background-color: #FBF5EF; border-color: #FBF5EF">
-            <img src="/static/Indochine at Delaire Graff Estate _ Drizzle and Dip.jfif" class="responsive-fluid btn card-img-top" data-bs-toggle="collapse" href="#Hide" style="height: 380px;">
+            <img src="/static/Indochine at Delaire Graff Estate _ Drizzle and Dip.jfif" class="responsive-fluid" data-bs-toggle="collapse" href="#Hide" style="height: 380px;">
             <div class="collapse" id="Hide"><center>Food 1</center></div>
         </div>
     </div>
     <div class="col-4">
-        <div class="card">
-            <img src="/static/[Homemade] Pan Roasted Chicken Thigh, Mashed Potatoes, and Sauteed Green Beans.jfif" class="responsive-fluid"style="height: 380px;">
+        <div class="card" style="background-color: #FBF5EF; border-color: #FBF5EF">
+            <img src="/static/[Homemade] Pan Roasted Chicken Thigh, Mashed Potatoes, and Sauteed Green Beans.jfif" class="responsive-fluid"data-bs-toggle="collapse" href="#FOOD2" style="height: 380px;">
+            <div class="collapse" id="FOOD2"><center>Food 1</center></div>
         </div>
     </div>
     <div class="col-4">
-        <div class="card">
-            <img src="/static/Chocolate Pots de Creme.jfif" class="responsive-fluid" style="height: 380px;">
+        <div class="card" style="background-color: #FBF5EF; border-color: #FBF5EF">
+            <img src="/static/Chocolate Pots de Creme.jfif" class="responsive-fluid"  data-bs-toggle="collapse" href="#FOOD3" style="height: 380px;">
+            <div class="collapse" id="FOOD3"><center>Food 1</center></div>
         </div>
     </div>
     <div class="col-3"  style="margin-top: 10px;">
-        <div class="card">
-            <img src="/static/food4.png" class="responsive-fluid" style="height: 380px;">
+        <div class="card" style="background-color: #FBF5EF; border-color: #FBF5EF">
+            <img src="/static/food4.png" class="responsive-fluid"  data-bs-toggle="collapse" href="#FOOD4" style="height: 380px;">
+            <div class="collapse" id="FOOD4"><center>Food 1</center></div>
         </div>
     </div> 
     <div class="col-5"style="margin-top: 10px;">
-        <div class="card">
-            <img src="/static/food5.jfif" class="responsive-fluid" style="height: 380px; width: 525px">
+        <div class="card" style="background-color: #FBF5EF; border-color: #FBF5EF">
+            <img src="/static/food5.jfif" class="responsive-fluid"  data-bs-toggle="collapse" href="#FOOD5" style="height: 380px; width: 525px">
+            <div class="collapse" id="FOOD5"><center>Food 1</center></div>
         </div>
     </div>
     <div class="col-4"style="margin-top: 10px;">
-        <div class="card">
-            <img src="/static/cake.jfif"class="responsive-fluid" style="height: 380px; width: 400px">
+        <div class="card" style="background-color: #FBF5EF; border-color: #FBF5EF">
+            <img src="/static/cake.jfif"class="responsive-fluid"  data-bs-toggle="collapse" href="#FOOD6" style="height: 380px; width: 400px">
+            <div class="collapse" id="FOOD6"><center>Food 1</center></div>
         </div>
     </div>
 </div>
