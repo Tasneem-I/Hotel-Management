@@ -9,18 +9,23 @@
 <body style="background-color: #FBF5EF;">
 {% include 'nav.html' %}
 <div class="container">
-    <form>
+    <form method="POST" action="/reserve">
+      <div class="form-group">
+            <label for="customer_name">Name:</label>
+            <input type="text" class="form-control" id="customer_name" name="customer_name" required>
+            </select>
+          </div>
       <div class="form-group">
         <label for="checkin">Check-in date:</label>
-        <input type="date" class="form-control" id="checkin" name="checkin">
+        <input type="date" class="form-control" id="checkin" name="checkin" required>
       </div>
       <div class="form-group">
         <label for="checkout">Check-out date:</label>
-        <input type="date" class="form-control" id="checkout" name="checkout">
+        <input type="date" class="form-control" id="checkout" name="checkout" required>
       </div>
       <div class="form-group">
         <label for="guests">Number of guests:</label>
-        <select class="form-control" id="guests" name="guests">
+        <select class="form-control" id="guests" name="guests" required>
           <option value="1">1 guest</option>
           <option value="2">2 guests</option>
           <option value="3">3 guests</option>
@@ -29,13 +34,13 @@
       </div>
       <div class="form-group">
         <label for="room-type">Room type:</label>
-        <select class="form-control" id="room-type" name="room-type">
+        <select class="form-control" id="room-type" name="room-type" required>
           <option value="standard">Standard room</option>
           <option value="deluxe">Deluxe room</option>
           <option value="suite">Suite</option>
         </select>
       </div>
-      <button type="submit" class="btn btn-primary">Book now</button>
+      <button type="submit" class="btn btn-primary" value="reserve">Book now</button>
     </form>
   </div>
   
