@@ -13,15 +13,22 @@
       <div class="form-group">
             <label for="customer_name">Name:</label>
             <input type="text" class="form-control" id="customer_name" name="customer_name" required>
-            </select>
+          </div>
+          <div class="form-group">
+            <label for="contact_no">Mobile Number:</label>
+            <input type="number" class="form-control" id="contact_no" name="contact_no" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
           </div>
       <div class="form-group">
-        <label for="checkin">Check-in date:</label>
-        <input type="date" class="form-control" id="checkin" name="checkin" required>
+        <label for="check_in">Check-in date:</label>
+        <input type="date" class="form-control" id="check_in" name="check_in" required>
       </div>
       <div class="form-group">
-        <label for="checkout">Check-out date:</label>
-        <input type="date" class="form-control" id="checkout" name="checkout" required>
+        <label for="check_out">Check-out date:</label>
+        <input type="date" class="form-control" id="check_out" name="check_out" required>
       </div>
       <div class="form-group">
         <label for="guests">Number of guests:</label>
@@ -33,14 +40,14 @@
         </select>
       </div>
       <div class="form-group">
-        <label for="room-type">Room type:</label>
-        <select class="form-control" id="room-type" name="room-type" required>
+        <label for="room_type">Room type:</label>
+        <select class="form-control" id="room_type" name="room_type" required>
           <option value="standard">Standard room</option>
           <option value="deluxe">Deluxe room</option>
           <option value="suite">Suite</option>
         </select>
       </div>
-      <button type="submit" class="btn btn-primary" value="reserve">Book now</button>
+      <button type="submit" class="btn btn-primary" value="reserve" style="margin-top: 2%">Book now</button>
     </form>
   </div>
   

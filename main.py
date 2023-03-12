@@ -1,4 +1,5 @@
 import random
+from datetime import datetime
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 #Initiating flask
@@ -62,15 +63,17 @@ def book():
         guests = request.form['guests']
         room_type = request.form['room_type']
         booking = Room_Booking(room_number=room_number,customer_name=customer_name,contact_no=contact_no,
-                          email=email,check_in=check_in,check_out=check_out,guests=guests,room_type=room_type)
+                          email=email,check_in=datetime.strptime(check_in, '%Y-%m-%d').date(),check_out=datetime.strptime(check_out, '%Y-%m-%d').date(),guests=guests,room_type=room_type)
         db.session.add(booking)
         db.session.commit()
-        return 
+        return render_template('success.html',room_number=room_number)
     return render_template('book_room.html')
 def find_available_room_number():
     used_room_numbers = [b.room_number for b in Room_Booking.query.all()]
     available_room_numbers = [r.number for r in Room.query.all() if r.number not in used_room_numbers]
-    return random.choice(available_room_numbers)
+    global num
+    num = random.choice(available_room_numbers)
+    return num
 
 if __name__ == '__main__':
     app.run('0.0.0.0', debug=True)
