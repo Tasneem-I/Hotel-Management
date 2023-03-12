@@ -13,12 +13,16 @@ def home():
 def about():
     return render_template('about.html')
 
-@app.route('/')
+@app.route('/reserve')
 def room():
     return render_template('book_room.html')
 class Room_Booking(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     room_number = db.Column(db.Integer, nullable=False)
+    customer_name = db.Column(db.String(30), nullable=False)
+    contact_no = db.Column(db.Integer, nullable=False)
+    email = db.Column(db.String(50), nullable=False)
+
     
 
 
