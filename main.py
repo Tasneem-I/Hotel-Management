@@ -5,7 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 #Initiating flask
 app = Flask(__name__)
 
-#Confiquring SQLAlchemy
+#Confiquring SQLAlchemy 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///hotel.db'
 db = SQLAlchemy(app)
 
