@@ -12,8 +12,8 @@ db = SQLAlchemy(app)
 #Defining a table called room and storing the room numbers
 class Room(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    number = db.Column(db.Integer())
-
+    number = db.Column(db.Integer)
+#defining a room booking table
 class Room_Booking(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     room_number = db.Column(db.Integer, nullable=False)
