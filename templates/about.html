@@ -6,7 +6,7 @@
     <title>{% block title %} Home {% endblock %}</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
-<body>
+<body style="background-color: #FBF5EF;"></body>
 {% include 'nav.html' %}
 
 {% include 'nav2.html' %}
@@ -16,17 +16,13 @@
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#sliders" data-bs-slide-to ='0' class="active"></button>
         <button type="button" data-bs-target="#sliders" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#sliders" data-bs-slide-to="2"></button> 
     </div>
     <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="/static/switzerland.webp" class="d-block w-100" style="height: 300px;">
+        <div class="carousel-item active" data-bs-interval="3000">
+            <img src="/static/1 about.png" class="d-block w-100" style="height: 600px;">
         </div>
         <div class="carousel-item">
-            <img src = '/static/south_korea.png' class="d-block w-100" style="height: 300px;">
-        </div>
-        <div class="carousel-item">
-            <img src="/static/india.jfif" class="d-block w-100" style="height: 200px;">
+            <img src = '/static/2 about.png' class="d-block w-100" style="height: 600px;">
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#sliders" data-bs-slide="prev">
@@ -38,29 +34,71 @@
         <span class="visually-hidden">Next</span>
     </button>
 </div> 
+
 <!--Our story-->
 <nav id = ourstory></nav>
-<h1 style="margin-top: 5%"><center>Our Story</center></h1>
+<h1 style="margin-top: 5%;font-family: serif;"><center>OUR STORY</center></h1>
         <hr class="hr"/>
-<div class="row" style="margin-top: 50px",">
-    <div class="col-5" style="margin-left:2%">
-        <img src="/static/south_korea.png" class="responsive-fluid" style="max-width: 500px;">
+<div class="row" style="margin-top: 50px">
+    <div class="col-4" style="margin-left:2%">
+        <img src="/static/TLLON_Our_Story.webp" class="responsive-fluid" style="max-width:100%">
     </div>
-    <div class="col-7">
-        <p></p>
+    <div class="col-8">
+        <p style="font-family: sans-serif;text-align: justify;"><center>Welcome to Euphovista, a historic and charming hotel in Chennai. Our classic architecture and elegant furnishings reflect our rich heritage, with a decor that showcases local culture and art. We prioritize eco-friendly and sustainable practices and provide personalized service as a family-owned business. Since 1990, we have hosted distinguished guests from politicians to artists. Be a part of our story and experience the magic of our historic hotel, where timelessness and impeccable service meet.</center></p>
     </div>
 </div>
 
+<!--Why us-->
 <nav id = whyus></nav>
-<h1 style="margin-top: 5%"><center>Why Choose Us</center></h1>
+<h1 style="margin-top: 5%;font-family:serif;"><center>WHY CHOOSE US</center></h1>
         <hr class="hr"/>
-<div class="row" style="margin-top: 50px;">
+<div class="row" style="margin-top: 50px">
     <div class="col-5">
-        <img src="/static/south_korea.png" class="responsive-fluid" style="max-width: 500px;margin-left: 5%;">
+        <img src="/static/genuine service.webp" class="responsive-fluid" style="max-width: 500px;margin-left: 5%;">
     </div>
     <div class="col-7">
-        <h2 style="margin-right: 200px;"><center>GENUINE SERVICE</center></h2>
-        <p></p>
+        <h2 style="margin-right: 200px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"><center>GENUINE SERVICE</center></h2>
+        <p style="font-family: sans-serif"><center>Our guests are our number one priority. Our caring and sincere colleagues strive to anticipate every need and take the initiative to provide warm, sincere service. We encourage our team to take ownership of guest satisfaction and provide innovation and excellence in everything we do.</center></p>
+    </div>
+<div class="row" style="margin-top: 100px">
+    <div class="col-7">
+        <h2 style="margin-left: 30px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"><center>CAPTIVATION OF THE SENSES</center></h2>
+        <p style="font-family: sans-serif"><center>We recognise that brands are created through embracing and engaging all the senses — sight, sound, taste, touch, and smell. From our Ginger Flower fragrance to the pink roses in the lobby, we always aim to captivate our guests with unique touches. </center></p>
+    </div>
+    <div class="col-5" >
+        <img src="/static/lobby.webp" class="responsive-fluid" style="max-width: 500px;margin-left: 15%">
+    </div>
+<div class="row" style="margin-top: 50px">
+    <div class="col-5">
+        <img src="/static/innovations.webp" class="responsive-fluid" style="max-width: 500px;margin-left: 5%;">
+    </div>
+    <div class="col-7">
+        <h2 style="margin-right: 200px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"><center>INNOVATION</center></h2>
+        <p style="font-family: sans-serif"><center>Be it technology, service, or our signatures and products, we always bring the industry's newest and the best to our guests. Our team believes in a culture of innovation, and always strives to be more effective in how we deliver service.</center></p>
+    </div>
+<div class="row" style="margin-top: 100px">
+    <div class="col-7">
+        <h2 style="margin-left: 30px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"><center>ENTERTAINMENT</center></h2>
+        <p style="font-family: sans-serif"><center>Indulge in a world of refined entertainment at our Euphovista . Immerse yourself in an exclusive atmosphere of sophistication and elegance, where live music, theater performances, and cultural events await. Experience the finest in luxury entertainment and create unforgettable moments that will last a lifetime.</center></p>
+    </div>
+    <div class="col-5" >
+        <img src="/static/entertainment.webp" class="responsive-fluid" style="max-width: 500px;margin-left: 15%;">
+    </div>
+<div class="row" style="margin-top: 50px">
+    <div class="col-5">
+        <img src="/static/design1.webp" class="responsive-fluid" style="max-width: 500px;margin-left: 5%;">
+    </div>
+    <div class="col-7">
+        <h2 style="margin-right: 200px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><center>DESIGN</center></h2>
+        <p style="font-family: sans-serif"><center> Our spaces are thoughtfully crafted to provide a seamless blend of functionality and aesthetics, with attention to every detail. Experience luxury in every corner, from the lobby to the guest rooms, and leave with unforgettable memories.</center></p>
+    </div>
+<div class="row" style="margin-top: 100px">
+    <div class="col-7">
+        <h2 style="margin-left: 30px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"><center>SPA </center></h2>
+        <p style="font-family: sans-serif"><center>Indulge in the ultimate relaxation experience at our hotel spa. Unwind with a range of luxurious treatments and facilities, from massages to saunas, in a tranquil and serene atmosphere. Let us help you escape from the hustle and bustle of daily life and leave feeling refreshed and rejuvenated.</center></p>
+    </div>
+    <div class="col-5" >
+        <img src="/static/spa.webp" class="responsive-fluid" style="max-width: 500px;margin-left: 15%">
     </div>
 </div>
 

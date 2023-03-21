@@ -5,15 +5,15 @@ from flask_sqlalchemy import SQLAlchemy
 #Initiating flask
 app = Flask(__name__)
 
-#Confiquring SQLAlchemy 
+#Confiquring SQLAlchemy
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///hotel.db'
 db = SQLAlchemy(app)
 
 #Defining a table called room and storing the room numbers
 class Room(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    number = db.Column(db.Integer)
-#defining a room booking table
+    number = db.Column(db.Integer())
+
 class Room_Booking(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     room_number = db.Column(db.Integer, nullable=False)
